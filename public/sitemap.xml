@@ -10,33 +10,39 @@
 
   <!-- Complete Catalog -->
   <url>
-    <loc>https://www.usasmmprovider.com/#catalog</loc>
+    <loc>https://www.usasmmprovider.com/catalog</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Categories -->
+  <!-- Category: Reviews -->
   <url>
-    <loc>https://www.usasmmprovider.com/#category/reviews</loc>
+    <loc>https://www.usasmmprovider.com/category/reviews</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Category: Bank & Wallet -->
   <url>
-    <loc>https://www.usasmmprovider.com/#category/bank-wallet</loc>
+    <loc>https://www.usasmmprovider.com/category/bank-wallet</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Category: Email and Number -->
   <url>
-    <loc>https://www.usasmmprovider.com/#category/email-number</loc>
+    <loc>https://www.usasmmprovider.com/category/email-number</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Category: Accounts -->
   <url>
-    <loc>https://www.usasmmprovider.com/#category/accounts</loc>
+    <loc>https://www.usasmmprovider.com/category/accounts</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -44,205 +50,175 @@
 
   <!-- Reviews Services -->
   <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-google-reviews</loc>
+    <loc>https://www.usasmmprovider.com/service/buy-google-reviews</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-google-local-guide-reviews</loc>
+    <loc>https://www.usasmmprovider.com/service/buy-google-local-guide-reviews</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-trustpilot-reviews</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-facebook-reviews</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-bbb-reviews</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-tripadvisor-reviews</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-yelp-reviews</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-google-play-reviews</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-chrome-extension-reviews</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.usasmmprovider.com/#service/google-negative-reviews-removal</loc>
+    <loc>https://www.usasmmprovider.com/service/buy-trustpilot-reviews</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.usasmmprovider.com/service/buy-facebook-reviews</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.usasmmprovider.com/service/buy-bbb-reviews</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.usasmmprovider.com/service/buy-google-play-reviews</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.usasmmprovider.com/service/buy-chrome-extension-reviews</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.usasmmprovider.com/service/negative-review-removal-service</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <!-- Bank & Wallet Services -->
   <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-verified-paypal-account</loc>
+    <loc>https://www.usasmmprovider.com/service/buy-verified-paypal-account</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.usasmmprovider.com/service/buy-restore-paypal-accounts</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.usasmmprovider.com/service/buy-cash-app-accounts</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.usasmmprovider.com/service/buy-chase-bank-accounts</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-verified-cash-app-accounts</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-verified-chase-bank-account</loc>
+    <loc>https://www.usasmmprovider.com/service/buy-relay-bank-accounts</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-verified-relay-bank-accounts</loc>
+    <loc>https://www.usasmmprovider.com/service/buy-kraken-accounts</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-verified-kraken-accounts</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-verified-redotpay-accounts</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-verified-chime-bank-accounts</loc>
+    <loc>https://www.usasmmprovider.com/service/buy-redotpay-accounts</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
 
-  <!-- Email and Number Services -->
+  <!-- Email & Number Services -->
   <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-usa-pva-gmail</loc>
+    <loc>https://www.usasmmprovider.com/service/buy-usa-gmail-accounts</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.usasmmprovider.com/service/buy-old-aged-gmail-accounts</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-aged-gmail</loc>
+    <loc>https://www.usasmmprovider.com/service/buy-edu-mail-accounts</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.usasmmprovider.com/service/buy-custom-domain-outlook-accounts</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.usasmmprovider.com/service/buy-google-voice-accounts</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.usasmmprovider.com/service/buy-textnow-accounts</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.usasmmprovider.com/service/buy-talkatone-accounts</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.usasmmprovider.com/service/buy-whatsapp-accounts</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-edu-emails</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-outlook-accounts</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-hotmail-accounts</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-yahoo-accounts</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-google-voice-accounts</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-textnow-accounts</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-talkatone-accounts</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-textplus-accounts</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-whatsapp-numbers</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
   </url>
 
-  <!-- Accounts Services -->
+  <!-- Social & Developer Accounts -->
   <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-facebook-accounts</loc>
+    <loc>https://www.usasmmprovider.com/service/buy-facebook-accounts</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-instagram-accounts</loc>
+    <loc>https://www.usasmmprovider.com/service/buy-instagram-accounts</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-twitter-x-accounts</loc>
+    <loc>https://www.usasmmprovider.com/service/buy-twitter-x-accounts</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-linkedin-accounts</loc>
+    <loc>https://www.usasmmprovider.com/service/buy-linkedin-accounts</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.usasmmprovider.com/#service/buy-github-accounts</loc>
+    <loc>https://www.usasmmprovider.com/service/buy-github-accounts</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>

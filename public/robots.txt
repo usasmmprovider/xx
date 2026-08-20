@@ -2,7 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /checkout/
-Disallow: /admin/
 
-# Sitemap Location
+# Canonical Sitemap
 Sitemap: https://www.usasmmprovider.com/sitemap.xml

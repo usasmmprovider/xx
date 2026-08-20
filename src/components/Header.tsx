@@ -243,13 +243,6 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Right Action Controls */}
           <div className="flex items-center gap-2.5 sm:gap-3 shrink-0">
-            
-            {/* Direct USDT & BTC Accepted Pill */}
-            <div className="hidden 2xl:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900/80 border border-slate-800 text-[11px] text-slate-300">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-              <span>USDT & BTC Accepted</span>
-            </div>
-
             {/* Quick Contact Modal Button - Desktop only to keep mobile header clean */}
             <button
               onClick={onOpenContactModal}

@@ -2,5 +2,7 @@
   "name": "USASMMProvider - SMM & Account Services",
   "description": "Premium SMM services provider offering Google & TrustPilot reviews, verified bank accounts, social media accounts, email accounts, and negative review removal with crypto payment and 24/7 support.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

@@ -21,39 +21,91 @@ export default function App() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const [showBackToTop, setShowBackToTop] = useState(false);
 
-  // Handle URL hash navigation
-  useEffect(() => {
-    const handleHashChange = () => {
-      const hash = window.location.hash.replace('#', '');
-      if (hash.startsWith('service/')) {
-        const slug = hash.replace('service/', '');
-        const found = getServiceById(slug);
-        if (found) {
-          setSelectedService(found);
-          setCurrentView('service');
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-      } else if (hash.startsWith('category/')) {
-        const cat = hash.replace('category/', '');
-        setSelectedCategory(cat);
-        setSelectedService(null);
-        setCurrentView('catalog');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      } else if (hash === 'catalog') {
+  // Parse URL pathname, search query, and fallback hash for clean SEO routing
+  const parseCurrentRoute = () => {
+    const pathname = window.location.pathname.replace(/\/+$/, '') || '/';
+    const hash = window.location.hash.replace(/^#\/?/, '');
+
+    // Check service routes: /service/:slug or /services/:slug or /#service/:slug
+    if (pathname.startsWith('/service/')) {
+      const slug = pathname.replace('/service/', '').split('/')[0];
+      const found = getServiceById(slug);
+      if (found) {
+        setSelectedService(found);
         setSelectedCategory(null);
-        setSelectedService(null);
-        setCurrentView('catalog');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      } else {
-        // Home view
-        setSelectedService(null);
-        setCurrentView('home');
+        setCurrentView('service');
+        return;
       }
+    } else if (pathname.startsWith('/services/')) {
+      const slug = pathname.replace('/services/', '').split('/')[0];
+      const found = getServiceById(slug);
+      if (found) {
+        setSelectedService(found);
+        setSelectedCategory(null);
+        setCurrentView('service');
+        // Clean URL to canonical /service/:slug
+        window.history.replaceState(null, '', `/service/${found.slug}`);
+        return;
+      }
+    } else if (pathname.startsWith('/category/')) {
+      const cat = pathname.replace('/category/', '').split('/')[0];
+      setSelectedCategory(cat);
+      setSelectedService(null);
+      setCurrentView('catalog');
+      return;
+    } else if (pathname === '/catalog' || pathname === '/categories') {
+      setSelectedCategory(null);
+      setSelectedService(null);
+      setCurrentView('catalog');
+      return;
+    }
+
+    // Check legacy hash routes (e.g. /#service/buy-restore-paypal-accounts) and convert to clean URL
+    if (hash.startsWith('service/')) {
+      const slug = hash.replace('service/', '').split('/')[0];
+      const found = getServiceById(slug);
+      if (found) {
+        setSelectedService(found);
+        setSelectedCategory(null);
+        setCurrentView('service');
+        window.history.replaceState(null, '', `/service/${found.slug}`);
+        return;
+      }
+    } else if (hash.startsWith('category/')) {
+      const cat = hash.replace('category/', '').split('/')[0];
+      setSelectedCategory(cat);
+      setSelectedService(null);
+      setCurrentView('catalog');
+      window.history.replaceState(null, '', `/category/${cat}`);
+      return;
+    } else if (hash === 'catalog') {
+      setSelectedCategory(null);
+      setSelectedService(null);
+      setCurrentView('catalog');
+      window.history.replaceState(null, '', '/catalog');
+      return;
+    }
+
+    // Direct Home
+    setSelectedService(null);
+    setSelectedCategory(null);
+    setCurrentView('home');
+  };
+
+  useEffect(() => {
+    parseCurrentRoute();
+
+    const handlePopState = () => {
+      parseCurrentRoute();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
-    handleHashChange();
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+    window.addEventListener('popstate', handlePopState);
+    window.addEventListener('hashchange', handlePopState);
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+      window.removeEventListener('hashchange', handlePopState);
+    };
   }, []);
 
   useEffect(() => {
@@ -72,14 +124,14 @@ export default function App() {
     setSelectedService(null);
     setSelectedCategory(null);
     setCurrentView('home');
-    window.location.hash = '';
+    window.history.pushState(null, '', '/');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleSelectService = (service: ServiceItem) => {
     setSelectedService(service);
     setCurrentView('service');
-    window.location.hash = `service/${service.slug}`;
+    window.history.pushState(null, '', `/service/${service.slug}`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -87,11 +139,8 @@ export default function App() {
     setSelectedCategory(categoryId);
     setSelectedService(null);
     setCurrentView('catalog');
-    if (categoryId) {
-      window.location.hash = `category/${categoryId}`;
-    } else {
-      window.location.hash = 'catalog';
-    }
+    const path = categoryId ? `/category/${categoryId}` : '/catalog';
+    window.history.pushState(null, '', path);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -99,7 +148,7 @@ export default function App() {
     setSelectedCategory(null);
     setSelectedService(null);
     setCurrentView('catalog');
-    window.location.hash = 'catalog';
+    window.history.pushState(null, '', '/catalog');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 

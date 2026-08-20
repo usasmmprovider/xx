@@ -42,9 +42,9 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
   // Determine Canonical URL
   let effectiveCanonical = canonicalUrl || `${SITE_CONFIG.siteUrl}/`;
   if (service) {
-    effectiveCanonical = `${SITE_CONFIG.siteUrl}/#service/${service.slug}`;
+    effectiveCanonical = `${SITE_CONFIG.siteUrl}/service/${service.slug}`;
   } else if (categoryId) {
-    effectiveCanonical = `${SITE_CONFIG.siteUrl}/#category/${categoryId}`;
+    effectiveCanonical = `${SITE_CONFIG.siteUrl}/category/${categoryId}`;
   }
 
   useEffect(() => {
@@ -168,7 +168,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
           highPrice: Math.max(...service.tiers.map((t) => t.price)),
           offerCount: service.tiers.length,
           availability: 'https://schema.org/InStock',
-          url: `${SITE_CONFIG.siteUrl}/#service/${service.slug}`,
+          url: `${SITE_CONFIG.siteUrl}/service/${service.slug}`,
           priceValidUntil: '2028-12-31',
         },
         aggregateRating: {
@@ -213,13 +213,13 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
             '@type': 'ListItem',
             position: 2,
             name: service.categoryName,
-            item: `${SITE_CONFIG.siteUrl}/#category/${service.category}`,
+            item: `${SITE_CONFIG.siteUrl}/category/${service.category}`,
           },
           {
             '@type': 'ListItem',
             position: 3,
             name: service.name,
-            item: `${SITE_CONFIG.siteUrl}/#service/${service.slug}`,
+            item: `${SITE_CONFIG.siteUrl}/service/${service.slug}`,
           },
         ],
       });
