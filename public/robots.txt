@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /checkout/
+Disallow: /admin/
+
+# Sitemap Location
+Sitemap: https://www.usasmmprovider.com/sitemap.xml
