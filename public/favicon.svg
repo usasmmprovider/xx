@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background container with rounded corners -->
+  <rect width="64" height="64" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Outer Shield Border Glow -->
+  <path d="M32 10 L50 17 C50 32 42 46 32 52 C22 46 14 32 14 17 Z" fill="#064e3b" fill-opacity="0.4" stroke="url(#shieldGrad)" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Inner Shield Core -->
+  <path d="M32 14 L46 20 C46 32 39 43 32 48 C25 43 18 32 18 20 Z" fill="url(#shieldGrad)"/>
+
+  <!-- Verification Checkmark / Star in Center -->
+  <path d="M26 31 L30.5 35.5 L38.5 25" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Small upper star badge -->
+  <circle cx="48" cy="14" r="4" fill="#38bdf8" stroke="#0f172a" stroke-width="1.5" />
+</svg>
